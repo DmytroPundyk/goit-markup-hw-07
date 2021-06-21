@@ -751,35 +751,30 @@ img {
 }
 .pattern-list__item {
    display: block;
-   text-decoration: none;
-   transition-property: box-shadow;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.pattern-list__link:hover,
-.pattern-list__link:focus {
-   box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f,
-      1px 4px 6px #00000029;
-}
-.pattern-list__item {
    background-color: var(--main-color);
    margin-left: var(--basic-card-gap);
    margin-top: var(--basic-card-gap);
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.pattern-list__thumb {
+.product-link {
+   text-decoration: none;
+   display: block;
+}
+.product-link:hover,
+.product-link:focus {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 1px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.product-link__thumb {
    position: relative;
    overflow: hidden;
 }
-
-.pattern-list__link {
-   text-decoration: none;
-}
-.pattern-list__link:hover .pattern-list__overlay,
-.pattern-list__link:focus .pattern-list__overlay {
+.product-link:hover .product-link__overlay,
+.product-link:focus .product-link__overlay {
    opacity: 1;
    transform: translate(-50%, -50%);
 }
-.pattern-list__overlay {
+.product-link__overlay {
    position: absolute;
    top: 50%;
    left: 50%;
@@ -792,7 +787,7 @@ img {
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.pattern-list__overlay-text {
+.product-link__overlay-text {
    position: absolute;
    top: 50%;
    left: 50%;
@@ -806,21 +801,21 @@ img {
    color: var(--main-color);
 }
 
-.pattern-list__description {
+.product-link__description {
    padding: 20.43px 24px;
    border-left: 1px solid #eee;
    border-right: 1px solid #eee;
    border-bottom: 1px solid #eee;
 }
 
-.pattern-list__project {
+.product-link__project {
    font-weight: bold;
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
    color: var(--main-text-color);
 }
-.pattern-list__product {
+.product-link__article {
    margin-top: 4.09px;
    font-size: 16px;
    line-height: 1.875;

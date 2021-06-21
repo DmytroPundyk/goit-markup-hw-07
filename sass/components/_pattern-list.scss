@@ -1,0 +1,84 @@
+/* примеры страницы Portfolio */
+.pattern-list {
+   margin-top: #{-1 * $basic-card-gap};
+   margin-left: #{-1 * $basic-card-gap};
+   display: flex;
+   flex-basis: calc(100% / 3 -30px);
+   flex-wrap: wrap;
+}
+.pattern-list__item {
+   display: block;
+   background-color: $main-color;
+   margin-left: $basic-card-gap;
+   margin-top: $basic-card-gap;
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.product-link {
+   text-decoration: none;
+   display: block;
+
+   &:hover,
+   &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+         1px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+   }
+}
+.product-link__thumb {
+   position: relative;
+   overflow: hidden;
+}
+
+.product-link__overlay {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, 50%);
+   width: 100%;
+   height: 100%;
+   background: rgba(33, 150, 243, 0.9);
+   opacity: 0;
+   transition-property: opacity, transform;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   .product-link:hover &,
+   .product-link:focus & {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+   }
+}
+.product-link__overlay-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 322px;
+   height: 168px;
+   margin: 0;
+   font-size: 18px;
+   line-height: 1.555;
+   letter-spacing: 0.03em;
+   color: $main-color;
+}
+
+.product-link__description {
+   padding: 20.43px 24px;
+   border-left: 1px solid #eee;
+   border-right: 1px solid #eee;
+   border-bottom: 1px solid #eee;
+}
+
+.product-link__project {
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+   color: $main-text-color;
+}
+.product-link__article {
+   margin-top: 4.09px;
+   font-size: 16px;
+   line-height: 1.875;
+   letter-spacing: 0.03em;
+   color: $second-text-color;
+}

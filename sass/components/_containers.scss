@@ -1,0 +1,15 @@
+/* контейнеры всех секций */
+.container {
+   width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+   display: flex;
+
+   .hero &,
+   .business &,
+   .our-team &,
+   .customers &,
+   .portfolio-content & {
+      flex-direction: column;
+   }
+}

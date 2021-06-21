@@ -1,0 +1,144 @@
+/* секция подвал сайта */
+.footer {
+   background-color: $bg-hero-footer;
+   padding: 60px 0;
+
+   & .container {
+      align-items: baseline;
+   }
+}
+.logo-address {
+   width: 231px;
+}
+.logo--white {
+   color: $main-color;
+}
+.logo-address__list {
+   margin-top: 20px;
+}
+.logo-address__item:not(:last-child) {
+   margin-bottom: 9px;
+}
+
+.logo-address__link {
+   color: #ffffff99;
+   font-style: normal;
+   line-height: 1.714;
+   letter-spacing: inherit;
+   text-decoration: none;
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &--white {
+      color: $main-color;
+   }
+
+   &:focus,
+   &:hover {
+      color: $special-color;
+   }
+}
+
+.social-network {
+   margin-left: 70px;
+}
+.social-network__header {
+   font-weight: 700;
+   font-size: inherit;
+   line-height: inherit;
+   letter-spacing: inherit;
+   text-transform: uppercase;
+   color: $main-color;
+}
+.social-network__list {
+   display: flex;
+   margin-top: 20px;
+}
+
+.social-network__item:not(:last-child) {
+   margin-right: 10px;
+}
+
+.social-network__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   background-color: #ffffff1a;
+   width: 44px;
+   height: 44px;
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+      background-color: $special-color;
+   }
+}
+.social-network__icon {
+   height: 20px;
+   width: 20px;
+   fill: $main-color;
+}
+.footer-form {
+   margin-left: 93px;
+}
+.footer-form__label {
+   font-weight: 700;
+   font-size: inherit;
+   line-height: inherit;
+   letter-spacing: inherit;
+   text-transform: uppercase;
+   color: $main-color;
+}
+.footer-form__item {
+   display: flex;
+   align-items: baseline;
+}
+
+.footer-form__input {
+   width: 358px;
+   height: 50px;
+   border: 1px solid #ffffff4d;
+   border-radius: 4px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   background-color: inherit;
+   color: $main-color;
+   font-size: 16px;
+   margin-top: 20px;
+   padding: 0 16px;
+
+   &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: #ffffff99;
+   }
+}
+.footer-form__submit {
+   padding: 10px 38px;
+   background-color: $special-color;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   font-family: inherit;
+   color: $main-color;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.875;
+   letter-spacing: 0.06em;
+   border-radius: 4px;
+   border: none;
+   margin-left: 12px;
+
+   &:hover {
+      cursor: pointer;
+   }
+}
+.footer-form__icon {
+   margin-left: 10px;
+}

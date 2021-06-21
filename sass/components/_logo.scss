@@ -1,0 +1,18 @@
+/* логотип сайта */
+/* стилизация логотипа сайта */
+.logo {
+   text-decoration: none;
+   color: #000;
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.192;
+   letter-spacing: inherit;
+   padding: 24px 0 25px 0;
+
+   /* голубая часть логотипа сайта */
+   &--blue {
+      color: $special-color;
+      font-family: "Raleway";
+   }
+}

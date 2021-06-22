@@ -1,8 +1,9 @@
-@import "utils/variables.scss";
-@import "utils/body-img.scss";
-@import "components/containers.scss";
-@import "components/header.scss";
-@import "components/logo.scss";
+@import "utils/variables";
+@import "base/normalize";
+@import "utils/body-img";
+@import "components/containers";
+@import "components/header";
+@import "components/logo";
 @import "components/navigation";
 @import "components/contacts";
 @import "components/hero";

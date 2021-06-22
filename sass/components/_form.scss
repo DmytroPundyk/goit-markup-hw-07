@@ -15,6 +15,12 @@
    &:nth-child(4) {
       margin-bottom: 20px;
    }
+   &.form__check-item {
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: $second-text-color;
+   }
 }
 
 .form__check-item {
@@ -23,12 +29,6 @@
    margin-bottom: 30px;
    align-items: center;
    justify-content: center;
-}
-.form__field.form__check-item {
-   font-size: 14px;
-   line-height: 1.714;
-   letter-spacing: 0.03em;
-   color: $second-text-color;
 }
 
 .form__check-box {

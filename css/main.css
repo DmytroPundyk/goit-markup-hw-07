@@ -581,6 +581,13 @@ img {
   margin-bottom: 20px;
 }
 
+.form__field.form__check-item {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .form__check-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,13 +603,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.form__field.form__check-item {
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .form__check-box {

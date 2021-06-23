@@ -10,12 +10,15 @@
 .logo-address {
    width: 231px;
 }
-.logo--white {
-   color: $main-color;
+.logo {
+   &--white {
+      color: $main-color;
+   }
 }
-.logo-address__list {
-   margin-top: 20px;
+.logo-container {
+   margin-bottom: 20px;
 }
+
 .logo-address__item:not(:last-child) {
    margin-bottom: 9px;
 }
@@ -50,10 +53,10 @@
    letter-spacing: inherit;
    text-transform: uppercase;
    color: $main-color;
+   margin-bottom: 20px;
 }
 .social-network__list {
    display: flex;
-   margin-top: 20px;
 }
 
 .social-network__item:not(:last-child) {
@@ -61,9 +64,7 @@
 }
 
 .social-network__link {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   @include centeredFlex();
    border-radius: 50%;
    background-color: #ffffff1a;
    width: 44px;
@@ -92,6 +93,7 @@
    letter-spacing: inherit;
    text-transform: uppercase;
    color: $main-color;
+   margin-bottom: 20px;
 }
 .footer-form__item {
    display: flex;
@@ -107,7 +109,7 @@
    background-color: inherit;
    color: $main-color;
    font-size: 16px;
-   margin-top: 20px;
+
    padding: 0 16px;
 
    &::placeholder {
@@ -122,9 +124,8 @@
 .footer-form__submit {
    padding: 10px 38px;
    background-color: $special-color;
-   display: flex;
-   align-items: center;
-   text-align: center;
+   @include centeredFlex();
+
    font-family: inherit;
    color: $main-color;
    font-weight: 700;
